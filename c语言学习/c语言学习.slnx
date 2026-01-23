@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="c语言学习/c语言学习.vcxproj" Id="9b4794fc-7fb1-4fc8-b693-3429d73fa5d0" />
+</Solution>
