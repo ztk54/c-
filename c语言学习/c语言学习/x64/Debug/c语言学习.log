@@ -1,0 +1,3 @@
+﻿  数组统计成绩.c
+D:\vsprograme\initial-learning-of-c-language\c语言学习\c语言学习\数组统计成绩.c(55,15): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+  c语言学习.vcxproj -> D:\vsprograme\initial-learning-of-c-language\c语言学习\x64\Debug\c语言学习.exe

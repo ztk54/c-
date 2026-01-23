@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="分椰子.c" />
+    <ClCompile Include="数组统计成绩.c" />
     <ClCompile Include="水仙花数.c" />
     <ClCompile Include="汉诺塔.c" />
   </ItemGroup>

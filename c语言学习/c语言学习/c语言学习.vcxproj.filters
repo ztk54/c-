@@ -24,5 +24,8 @@
     <ClCompile Include="分椰子.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数组统计成绩.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
