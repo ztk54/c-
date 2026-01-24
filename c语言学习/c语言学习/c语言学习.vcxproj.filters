@@ -27,5 +27,8 @@
     <ClCompile Include="数组统计成绩.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="交换数组最大最小值.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
