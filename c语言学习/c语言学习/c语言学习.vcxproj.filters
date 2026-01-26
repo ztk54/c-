@@ -30,5 +30,8 @@
     <ClCompile Include="交换数组最大最小值.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="餐厅打分.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
