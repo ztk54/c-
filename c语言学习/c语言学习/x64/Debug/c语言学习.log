@@ -1,2 +1,3 @@
-﻿  餐厅打分.c
+﻿  抛骰子.c
+D:\vsprograme\initial-learning-of-c-language\c语言学习\c语言学习\抛骰子.c(8,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
   c语言学习.vcxproj -> D:\vsprograme\initial-learning-of-c-language\c语言学习\x64\Debug\c语言学习.exe
