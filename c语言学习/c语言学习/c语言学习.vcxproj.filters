@@ -36,5 +36,8 @@
     <ClCompile Include="抛骰子.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="文曲星游戏.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
