@@ -1,3 +1,5 @@
-﻿  文曲星游戏.c
-D:\vsprograme\initial-learning-of-c-language\c语言学习\c语言学习\文曲星游戏.c(16,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  c语言学习.vcxproj -> D:\vsprograme\initial-learning-of-c-language\c语言学习\x64\Debug\c语言学习.exe
+﻿  抛骰子.c
+  文曲星游戏.c
+  正在生成代码...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+D:\vsprograme\initial-learning-of-c-language\c语言学习\x64\Debug\c语言学习.exe : fatal error LNK1120: 1 个无法解析的外部命令
