@@ -80,7 +80,7 @@ int Check_the_number(int n,int digit[])
 int Creat_the_number(int digits[])
 {
 	srand(time(NULL));
-	bool used[10] = {true};
+	bool used[10] = {false};//这里犯了一个错误，这里的true只会初始化一个元素，导致0元素不会被使用
 	int firstDigit = 1 + rand() % 9;
 	digits[0] = firstDigit;
 	used[firstDigit] = true;
