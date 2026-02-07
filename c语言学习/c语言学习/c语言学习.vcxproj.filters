@@ -42,5 +42,8 @@
     <ClCompile Include="关机.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="insert功能.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
