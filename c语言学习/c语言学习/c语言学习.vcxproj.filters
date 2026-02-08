@@ -45,5 +45,8 @@
     <ClCompile Include="insert功能.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="if语句作业.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

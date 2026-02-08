@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="if语句作业.c" />
     <ClCompile Include="insert功能.c" />
     <ClCompile Include="交换数组最大最小值.c" />
     <ClCompile Include="关机.c" />
