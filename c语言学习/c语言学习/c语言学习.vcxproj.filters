@@ -51,5 +51,8 @@
     <ClCompile Include="猜数字游戏.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="九九乘法表.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
