@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
 //int main()
 //{
 //	for (int i = 1;i <= 100;i++)
@@ -11,7 +11,7 @@
 //	}
 //	return 0;
 //}
-
+//
 //int main()
 //{
 //	int a[3];

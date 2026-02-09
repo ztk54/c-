@@ -137,6 +137,7 @@
     <ClCompile Include="文曲星游戏.c" />
     <ClCompile Include="水仙花数.c" />
     <ClCompile Include="汉诺塔.c" />
+    <ClCompile Include="猜数字游戏.c" />
     <ClCompile Include="餐厅打分.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
