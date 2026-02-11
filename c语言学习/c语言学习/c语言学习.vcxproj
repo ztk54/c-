@@ -131,6 +131,7 @@
     <ClCompile Include="2.9作业.c" />
     <ClCompile Include="if语句作业.c" />
     <ClCompile Include="insert功能.c" />
+    <ClCompile Include="二分查找.c" />
     <ClCompile Include="交换数组最大最小值.c" />
     <ClCompile Include="关机.c" />
     <ClCompile Include="分椰子.c" />

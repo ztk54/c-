@@ -54,5 +54,8 @@
     <ClCompile Include="2.9作业.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="二分查找.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

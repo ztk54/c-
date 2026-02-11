@@ -1,6 +1,6 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <math.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//#include <math.h>
 //¾Å¾Å³Ë·¨±í
 //int main()
 //{
