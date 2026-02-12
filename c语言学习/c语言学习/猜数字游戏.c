@@ -36,16 +36,18 @@
 //void game()
 //{
 //	int count = 0;
+//	int m;
 //	do
 //	{
 //		printf("请问您要尝试几次\n");
-//		if (scanf("%d", &count) != 1)
+//		 m = scanf("%d", &count);
+//		if (m!=1)
 //		{
 //			printf("输入有错，请您重新输入\n");
 //			while (getchar() != '\n');//清除缓冲区
 //			continue;
 //		}
-//	} while (count!=1);
+//	} while (m!=1);
 //	int number = rand() % 100 + 1;
 //	do
 //	{
@@ -59,6 +61,7 @@
 //		else if (guess == number)
 //		{
 //			printf("您猜对了\n");
+//			break;
 //		}
 //		else
 //		{
