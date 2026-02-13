@@ -69,5 +69,8 @@
     <ClCompile Include="构造升序.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2.13作业.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2.13作业.c" />
     <ClCompile Include="2.9作业.c" />
     <ClCompile Include="if语句作业.c" />
     <ClCompile Include="insert功能.c" />
