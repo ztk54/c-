@@ -66,5 +66,8 @@
     <ClCompile Include="矩阵转置.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="构造升序.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
