@@ -136,6 +136,7 @@
     <ClCompile Include="交换数组最大最小值.c" />
     <ClCompile Include="关机.c" />
     <ClCompile Include="分椰子.c" />
+    <ClCompile Include="打印X.c" />
     <ClCompile Include="抛骰子.c" />
     <ClCompile Include="数组统计成绩.c" />
     <ClCompile Include="文曲星游戏.c" />
