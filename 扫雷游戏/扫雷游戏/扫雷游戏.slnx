@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="扫雷游戏/扫雷游戏.vcxproj" />
+  <Project Path="扫雷游戏/扫雷游戏.vcxproj" Id="06d58f66-d7ae-4a9d-9785-3b0f1507bf9c" />
 </Solution>
