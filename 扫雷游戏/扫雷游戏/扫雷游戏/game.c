@@ -16,6 +16,7 @@ void game()
 	InitBoard(Mine, ROWS, RANKS, '0');
 	InitBoard(show, ROWS, RANKS, '*');
 	set_my_mine(Mine, ROW, RANK);
+	display_board(show, ROW, RANK);
 	Find_Mine(Mine, show, ROW, RANK);
 }
 
