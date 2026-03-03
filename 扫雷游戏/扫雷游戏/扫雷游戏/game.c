@@ -2,10 +2,10 @@
 
 void menu()
 {
-	printf("------------------------\n");
-	printf("----1.进行扫雷游戏-------\n");
-	printf("------0.退出游戏---------\n");
-	printf("------------------------\n");
+	printf("************************\n");
+	printf("******1. 继续游戏********\n");
+	printf("******0. 退出游戏********\n");
+	printf("************************\n");
 }
 
 void game()
@@ -52,7 +52,7 @@ void display_board(char board[ROWS][RANKS], int row, int rank)
 
 void set_my_mine(char board[ROWS][RANKS], int row, int rank)
 {
-	int count = 10;
+	int count = COUNT;
 	while (count)
 	{
 		int x = rand() % row + 1;
@@ -70,10 +70,16 @@ void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank
 	int x = 0;
 	int y = 0;
 	int win = 0;
-	while (win < row * rank - 10)
+	while (win < row * rank - COUNT)
 	{
+		int check = scanf("%d %d", &x, &y);
 		printf("请输入您想要排查的坐标\n");
-		scanf("%d %d", &x, &y);
+		if (check!= 2)
+		{
+			printf("输入非法，重新输入\n");
+			while (getchar() != '\n');
+			continue;
+		}
 		if (x >= 1 && x <= row && y >= 1 && y <= row)
 		{
 			if (mine[x][y] == '1')
@@ -102,7 +108,7 @@ void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank
 			printf("输入错误，请您重新输入\n");
 		}
 	}
-	if (win == row * rank - 10)
+	if (win == row * rank - COUNT)
 	{
 		printf("恭喜你，排雷成功\n");
 	}

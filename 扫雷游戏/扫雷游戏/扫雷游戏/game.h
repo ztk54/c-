@@ -8,6 +8,7 @@
 #define RANK 9
 #define ROWS ROW+2
 #define RANKS ROW+2
+#define COUNT 10
 
 void menu();
 void game();
