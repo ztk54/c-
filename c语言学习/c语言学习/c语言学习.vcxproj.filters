@@ -75,5 +75,8 @@
     <ClCompile Include="递归输出数字.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="3.7.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
