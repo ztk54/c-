@@ -29,3 +29,460 @@ Release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+# ============================================
+# VS Code 项目通用 .gitignore 文件
+# 最后更新：2026-03-11
+# ============================================
+
+# ====================
+# 操作系统文件
+# ====================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ====================
+# 编辑器/IDE 文件
+# ====================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# 本地历史记录
+.history/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.settings/
+.project
+.classpath
+.metadata/
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# ====================
+# 语言/框架特定文件
+# ====================
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+.yarn/install-state.gz
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+target/
+build/
+.gradle/
+.apt_generated/
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.so
+*.dylib
+*.dll
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib
+*.a
+
+# Go
+vendor/
+*.test
+*.out
+coverage.out
+go.work.sum
+
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# PHP
+vendor/
+composer.lock
+.env
+.phpunit.result.cache
+
+# Ruby
+/.bundle/
+/vendor/bundle
+*.gem
+.bundle
+.ruby-version
+.rvmrc
+
+# .NET
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.userprefs
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+node_modules/
+bower_components/
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+gen/
+bin/
+.gradle/
+local.properties
+*.iml
+*.hprof
+.cxx/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+Pods/
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+ios/.generated/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+
+# ====================
+# 构建/部署文件
+# ====================
+
+# 构建输出
+dist/
+build/
+out/
+release/
+*.min.js
+*.min.css
+*.map
+
+# 依赖目录
+bower_components/
+jspm_packages/
+typings/
+
+# 缓存
+.cache/
+.parcel-cache/
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 覆盖率报告
+coverage/
+*.lcov
+.nyc_output/
+
+# 文档
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ====================
+# 测试文件
+# ====================
+
+# 单元测试
+*.spec.js
+*.test.js
+*.spec.ts
+*.test.ts
+
+# 端到端测试
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# 性能测试
+.performance/
+
+# ====================
+# 环境/配置文件
+# ====================
+
+# 环境变量（包含敏感信息）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# 密钥文件
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+
+# 配置文件（可根据需要选择提交）
+# !.env.example
+# !.env.sample
+
+# ====================
+# 数据库/数据文件
+# ====================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# 临时数据库文件
+*.frm
+*.myd
+*.myi
+*.ibd
+*.dbf
+
+# 备份文件
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# ====================
+# 媒体/大文件
+# ====================
+
+# 图片（原始文件）
+*.psd
+*.ai
+*.xcf
+*.sketch
+
+# 视频/音频
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.mp3
+*.wav
+*.flac
+
+# 压缩文件
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tgz
+
+# 文档
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# ====================
+# 其他临时文件
+# ====================
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~$*
+
+# 系统临时文件
+*.stackdump
+*.pid
+*.pid.lock
+
+# 缓存文件
+.cache/
+.tmp/
+temp/
+
+# ====================
+# 版本控制系统
+# ====================
+
+# Git
+.gitignore
+.gitattributes
+.gitmodules
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+
+# ====================
+# 包管理器
+# ====================
+
+# npm
+package-lock.json
+npm-shrinkwrap.json
+
+# Yarn
+.yarn/
+.yarnrc.yml
+.pnp.*
+
+# pnpm
+pnpm-lock.yaml
+node_modules/.pnpm-store/
+
+# ====================
+# 项目特定文件
+# ====================
+
+# 自定义构建输出
+out/
+dist/
+build/
+release/
+
+# 自定义配置文件
+config/local.json
+config/development.json
+
+# 自定义日志
+logs/
+*.log
+
+# ====================
+# 云服务/部署
+# ====================
+
+# AWS
+.aws/
+
+# Azure
+.azure/
+
+# Google Cloud
+.gcloud/
+
+# Heroku
+*.heroku
+
+# Docker
+.docker/
+
+# Kubernetes
+.kube/
+
