@@ -26,11 +26,11 @@
 //	return 0;
 //}
 
-#include <stdio.h>
-int main()
-{
-	char a = 10;
-	char b = 120;
-	char c = a + b;
-	printf("%d\n", c);
-}
+//#include <stdio.h>
+//int main()
+//{
+//	char a = 10;
+//	char b = 120;
+//	char c = a + b;
+//	printf("%d\n", c);
+//}
