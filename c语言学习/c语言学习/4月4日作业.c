@@ -62,59 +62,73 @@
 //	return 0;
 //}
 
-int is_shuixian(int n)
-{
-	int tem1 = n;
-	int tem2 = n;
-	int count = 0;
-	int number = 0;
-	while (tem1)
-	{
-		tem1 /= 10;
-		count++;
-	}
-	while (tem2)
-	{
-		number += my_pow(tem2 % 10, count);
-		tem2 /= 10;
-	}
-	if (number == n)
-		return 1;
-	else
-		return 0;
-}
+//int is_shuixian(int n)
+//{
+//	int tem1 = n;
+//	int tem2 = n;
+//	int count = 0;
+//	int number = 0;
+//	while (tem1)
+//	{
+//		tem1 /= 10;
+//		count++;
+//	}
+//	while (tem2)
+//	{
+//		number += my_pow(tem2 % 10, count);
+//		tem2 /= 10;
+//	}
+//	if (number == n)
+//		return 1;
+//	else
+//		return 0;
+//}
+//
+//int my_pow(int x, int n)//x的n次方
+//{
+//	int num = 1;
+//	for (int i = 1;i <= n;i++)
+//	{
+//		num = num * x;
+//	}
+//	return num;
+//}
+//
+//int main()
+//{
+//	int count = 0;
+//	int j = 0;
+//	for (int i = 0;i <= 100000;i++)
+//	{
+//		j = is_shuixian(i);
+//		if (j == 1)
+//		{
+//			printf("%d ", i);
+//			count++;
+//			if (count % 5 == 0 && count != 0)
+//			{
+//				printf("\n");
+//			}
+//		}
+//		if (i == 100000)
+//		{
+//			printf("\n");
+//		}
+//	}
+//	printf("一共有%d个水仙花数\n", count);
+//	return 0;
+//}
 
-int my_pow(int x, int n)//x的n次方
-{
-	int num = 1;
-	for (int i = 1;i <= n;i++)
-	{
-		num = num * x;
-	}
-	return num;
-}
-
-int main()
-{
-	int count = 0;
-	int j = 0;
-	for (int i = 0;i <= 100000;i++)
-	{
-		j = is_shuixian(i);
-		if (j == 1)
-		{
-			printf("%d ", i);
-			count++;
-			if (count % 5 == 0 && count != 0)
-			{
-				printf("\n");
-			}
-		}
-		if (i == 100000)
-		{
-			printf("\n");
-		}
-	}
-	printf("一共有%d个水仙花数\n", count);
-	return 0;
-}
+//int main()
+//{
+//	int a = 0, sum = 0;
+//	scanf("%d", &a);
+//	int tem = a;
+//	for (int i = 1;i <= 5;i++)
+//	{
+//		sum += a;
+//		a = a * 10 + tem;
+//	}
+//	printf("和为%d", sum);
+//	return 0;
+//}
