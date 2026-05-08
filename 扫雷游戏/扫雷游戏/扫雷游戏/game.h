@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 #pragma once
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,4 +16,5 @@ void InitBoard(char board[ROWS][RANKS], int row, int rank, char ch);
 void display_board(char board[ROWS][RANKS], int row, int rank);
 void set_my_mine(char board[ROWS][RANKS], int x, int y);
 void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank);
+void Expand(char mine[ROWS][RANKS], char show[ROWS][RANKS], int x, int y, int* win);
 int get_my_mine(char mine[ROWS][RANKS], int x, int y);

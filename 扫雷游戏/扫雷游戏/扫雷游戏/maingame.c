@@ -1,4 +1,4 @@
-#include "game.h"
+ï»¿#include "game.h"
 int main()
 {
 	int input = 0;
@@ -12,10 +12,10 @@ int main()
 			game();
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·\n");
+			printf("é€€å‡ºæ¸¸æˆ\n");
 			break;
 		default:
-			printf("ÊäÈëÓĞ´í£¬ÇëÄúÖØĞÂÊäÈë");
+			printf("è¾“å…¥æœ‰é”™ï¼Œè¯·æ‚¨é‡æ–°è¾“å…¥");
 			break;
 		}
 	} while (input);

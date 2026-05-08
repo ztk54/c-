@@ -1,10 +1,10 @@
-#include "game.h"
+ï»¿#include "game.h"
 
 void menu()
 {
 	printf("************************\n");
-	printf("******1. ¼ÌĞøÓÎÏ·********\n");
-	printf("******0. ÍË³öÓÎÏ·********\n");
+	printf("******1. å¼€å§‹æ¸¸æˆ********\n");
+	printf("******0. é€€å‡ºæ¸¸æˆ********\n");
 	printf("************************\n");
 }
 
@@ -73,10 +73,10 @@ void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank
 	while (win < row * rank - COUNT)
 	{
 		int check = scanf("%d %d", &x, &y);
-		printf("ÇëÊäÈëÄúÏëÒªÅÅ²éµÄ×ø±ê\n");
+		printf("è¯·è¾“å…¥ä½ è¦æ’æŸ¥çš„åæ ‡\n");
 		if (check!= 2)
 		{
-			printf("ÊäÈë·Ç·¨£¬ÖØĞÂÊäÈë\n");
+			printf("è¾“å…¥éæ³•ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 			while (getchar() != '\n');
 			continue;
 		}
@@ -84,7 +84,7 @@ void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank
 		{
 			if (mine[x][y] == '1')
 			{
-				printf("ºÜ±§Ç¸£¬Äú±»Õ¨ËÀÁË\n");
+				printf("å¾ˆæŠ±æ­‰ï¼Œä½ è¢«ç‚¸æ­»äº†\n");
 				display_board(mine, ROW, RANK);
 				break;
 			}
@@ -92,25 +92,47 @@ void Find_Mine(char mine[ROWS][RANKS], char show[ROWS][RANKS], int row, int rank
 			{
 				if (show[x][y] == '*')
 				{
-					int r = get_my_mine(mine, x, y);
-					show[x][y] = r + '0';
+					Expand(mine, show, x, y, &win);
 					display_board(show, ROW, RANK);
-					win++;
 				}
 				else
 				{
-					printf("¸ÃµØ·½±»ÅÅ²é¹ı£¬²»ÄÜÖØĞÂÅÅ²é\n");
+					printf("è¯¥åœ°æ–¹å·²ç»æ’æŸ¥è¿‡äº†ï¼Œè¯·é‡æ–°æ’æŸ¥\n");
 				}
 			}
 		}
 		else
 		{
-			printf("ÊäÈë´íÎó£¬ÇëÄúÖØĞÂÊäÈë\n");
+			printf("è¾“å…¥åæ ‡ä¸åˆæ³•ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 		}
 	}
 	if (win == row * rank - COUNT)
 	{
-		printf("¹§Ï²Äã£¬ÅÅÀ×³É¹¦\n");
+		printf("æ­å–œä½ ï¼Œæ’é›·æˆåŠŸ\n");
+	}
+}
+
+void Expand(char mine[ROWS][RANKS], char show[ROWS][RANKS], int x, int y, int* win)
+{
+	if (x < 1 || x > ROW || y < 1 || y > RANK)
+		return;
+	if (show[x][y] != '*')
+		return;
+
+	int count = get_my_mine(mine, x, y);
+	show[x][y] = count + '0';
+	(*win)++;
+
+	if (count == 0)
+	{
+		Expand(mine, show, x - 1, y - 1, win);
+		Expand(mine, show, x - 1, y, win);
+		Expand(mine, show, x - 1, y + 1, win);
+		Expand(mine, show, x, y - 1, win);
+		Expand(mine, show, x, y + 1, win);
+		Expand(mine, show, x + 1, y - 1, win);
+		Expand(mine, show, x + 1, y, win);
+		Expand(mine, show, x + 1, y + 1, win);
 	}
 }
 
